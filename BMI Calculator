@@ -1,0 +1,19 @@
+print(
+    "Hey! Welcome to Adam's BMI Calculator. Here, you can enter your WEIGHT and HEIGHT with which you will recieve your BMI. The BMI will show you your Body Mass Index."
+)
+print(
+    "Please Enter your WEIGHT and HEIGHT! (Both should be in METRIC system (Kg and Cm)"
+)
+
+m = int(input('Mass='))
+h = float(input('Height='))
+eq = (10000*(m/h/h))
+if eq >= int(25):
+    print("You are OVERWEIGHT! Your BMI is", round(eq),
+          "! Eat less and exercise!")
+elif eq <= int(19):
+    print("You are UNDERWEIGHT! Your BMI is", round(eq),
+          "! Eat more healthy food and take care!")
+else:
+    eq >= int(19) and eq <= int(25)
+    print("You have a NORMAL BMI! Your BMI is", round(eq), "! Keep it up!")
